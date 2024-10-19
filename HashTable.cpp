@@ -104,7 +104,7 @@ public:
 
         if (search(value) != -1)
         {
-            //cout << "Duplicate key found" << endl;
+            cout << "Duplicate key found" << endl;
             return;
         }
 
@@ -130,7 +130,7 @@ public:
             }
             if (seen == m)
             {
-                //cout << "All possible indices probed" << endl;
+                cout << "All possible indices probed" << endl;
                 return;
             }
             else
@@ -146,7 +146,7 @@ public:
     {
         if (isEmpty())
         {
-            //cout << "Key does not exist" << endl;
+            cout << "Key does not exist" << endl;
             return;
         }
 
@@ -168,7 +168,7 @@ public:
             i++;
         }
 
-        //cout << "Key does not exist" << endl;
+        cout << "Key does not exist" << endl;
     }
 
     int search(int value)
