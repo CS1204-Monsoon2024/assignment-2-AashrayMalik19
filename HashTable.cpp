@@ -198,18 +198,14 @@ public:
     }
 
     void printTable()
-{
-    int printed = 0;
-    for (int i = 0; i < m && printed < total; i++) 
     {
-        if (isOccupied[i])
+        for (int i = 0; i < m; i++)
         {
-            cout << arr[i] << " ";
-            printed++;
+            if (isOccupied[i])
+                cout << arr[i] << " "; 
+            else
+                cout << "- ";  
         }
-        else
-            cout << "- ";
+        cout << endl;
     }
-    cout << endl;
-}
 };
