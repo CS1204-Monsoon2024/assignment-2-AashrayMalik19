@@ -15,7 +15,7 @@ public:
         m = capacity;
         arr = new int[m];
         isOccupied = new bool[m];  // Initialize the boolean array
-        load_factor = 0.7;         // Optimized load factor for resizing
+        load_factor = 0.8;         // Optimized load factor for resizing
         total = 0;
         for(int i = 0; i < m; i++)
         {
@@ -99,7 +99,7 @@ public:
     {
         if (total / (double)m > load_factor)
         {
-            resize();  // Resize when load factor exceeds 0.7
+            resize();  // Resize when load factor exceeds 0.8
         }
 
         if (search(value) != -1)
